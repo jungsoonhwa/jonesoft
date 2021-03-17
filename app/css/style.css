@@ -8667,7 +8667,9 @@ input[type="submit"].form-control:focus {
     border-bottom: 1px solid #eee; }
     .box-preview-1 .box-content h4 {
       margin-bottom: 8px; text-transform: none;}
-
+.box-preview-1 .box-content h4 a{text-transform:none}
+.box-preview-1  .box-icon{text-align: center; width: 150px; margin: auto;padding: 20px 0 0 0 }
+.box-preview-1  .box-icon img{width:100%}
 /* Read More */
 .readmore {
   display: inline-block;
