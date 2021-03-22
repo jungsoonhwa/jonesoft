@@ -9339,7 +9339,7 @@ input[type="submit"].form-control:focus {
 =========================== */
 .cta-title-1 {
   text-align: center;
-  background: #0e0e0e url("../images/general-elements/cta-bg.png") center no-repeat;
+  background: #efefef url("../images/general-elements/cta-bg.png") center no-repeat;
   border-bottom: 1px solid #141414; }
   .cta-title-1 .section-inner {
     padding: 150px 0; }
@@ -9464,7 +9464,7 @@ input[type="submit"].form-control:focus {
 /*  [ 01 ] - Footer Mini
 =========================== */
 #footer-mini {
-  background: #0e0e0e;
+  background: #313131;
   padding: 60px 0;
   text-align: center; }
   #footer-mini .logo-footer {
