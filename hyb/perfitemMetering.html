@@ -1,0 +1,945 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>HUB-POP</title>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="assets/js/common/html5shiv.min.js"></script>
+	<script type="text/javascript" src="assets/js/common/respond.min.js"></script>
+	<![endif]-->
+    
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/lib/XEIcon/xeicon.min.css" type="text/css">
+
+          <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">  
+     <link rel="stylesheet" href="assets/lib/bootstrap/hubpop/bootstrap_hubpop.css" />
+     <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/common.css"/>
+    <link rel="stylesheet" href="assets/css/user_layout.css"/>
+    <link rel="stylesheet" href="assets/css/component.css" />
+    <link rel="stylesheet" href="assets/css/contents.css" />
+   
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="assets/lib/feather/feather.min.js" type="text/javascript"></script>
+<script src="assets/lib/mCustomScrollbar/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+<script src="assets/js/common.js" type="text/javascript"></script>
+<script src="assets/js/user.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="pageWrap">
+    <header id="header">
+    <div class="left-wrap ">
+                <div class="header-top">
+                    <h1>
+                        <a href="#/">
+                            <p class="sr-only">HUB POP</p>
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-mid">
+                    <div class="inner">
+                        <ul id="quick">
+                            <li class="lnb-depth1-item all">
+                                <a href="" ><span><img src="assets/img/user/gnb_all.png"></span>
+                                    <p class="sr-only">all menu</p>
+                                </a>
+                            </li>
+                            <li class="lnb-depth1-item home" >
+                                <a href="" ><span><img src="assets/img/user/gnb_home.png"></span>
+                                    <p class="sr-only">dashboard</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul id="gnb">
+                           <li class="lnb-depth1-item gnb_server" role="button" tabindex="0">
+                                <a href="" class="button" data-toggle="tooltip" data-placement="right" title="Compute">
+                                    <span><img src="assets/img/user/gnb_server.png"></span>
+                                    <p class="sr-only ">Compute</p>
+                                </a>
+                            </li>
+                            <li class="lnb-depth1-item gnb_gitmerge"  role="button" tabindex="0">
+                                <a href="" class="button" data-toggle="tooltip" data-placement="right" title="Analytics">
+                                    <span><img src="assets/img/user/gnb_gitmerge.png"></span>
+                                    <p class="sr-only ">Analytics</p>
+                                </a>
+                            </li>
+                            <li  class="lnb-depth1-item gnb_aperture"  role="button" tabindex="0">
+                                <a href="" class="button" data-toggle="tooltip" data-placement="right" title="Dev Tools">
+                                    <span><img src="assets/img/user/gnb_aperture.png"></span>
+                                    <p class="sr-only">Dev Tools</p>
+                                </a>
+                            </li>
+                            <li  class="lnb-depth1-item gnb_harddrive" role="button" tabindex="0">
+                                <a href="" class="button" data-toggle="tooltip" data-placement="right" title="Visualization Tools">
+                                    <span><img src="assets/img/user/gnb_harddrive.png"></span>
+                                    <p class="sr-only ">Visualization Tools</p>
+                                </a>
+                            </li>
+                            <li class="lnb-depth1-item gnb_database"  role="button" tabindex="0">
+                                <a href="" class="button" data-toggle="tooltip" data-placement="right" title="Storage">
+                                    <span><img src="assets/img/user/gnb_database.png"></span>
+                                    <p class="sr-only ">Storage</p>
+                                </a>
+                            </li>
+                            <li class="lnb-depth1-item gnb_command active" role="button" tabindex="0" style="">
+                                <a href="" class="button" data-toggle="tooltip" data-placement="right" title="Service">
+                                    <span><img src="assets/img/user/gnb_command.png"></span>
+                                    <p class="sr-only ">Service</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul class="quick-list">
+                        <li class="notification-area">
+                            <a href="" class="notification-btn">
+                                <span class="sr-only">알림</span>
+                                <i class="xi-bell"></i>
+                               
+                            </a>
+                        </li>
+                        <li class="user-info-area">
+                            <a href="" class="user-info-btn">
+                                <span class="sr-only">마이메뉴</span>
+                                <i class="xi-user"></i>
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+   
+    <aside id="lnbWrap"  class="">          
+        <nav id="lnb" class="">
+                <div class="title-project">
+                    <div class="text ">현대차IT제조플랫폼</div>
+     
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-nostyle dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical feather-directive"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                         <li>
+                                <a href="">현대차IT제조플랫폼03</a>
+                            </li>
+                            <li>
+                                <a href=""  >현대차IT제조플랫폼</a>
+                            </li>
+                            <li>
+                                <a href=""  >test2</a>
+                            </li> 
+                            <li>
+                                <a href=""  >test</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#/comm/project/create" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder-plus dropdown-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+                                    프로젝트 신청
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list dropdown-icon"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                                    전체 프로젝트
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scroll-bar " style="overflow: visible;">
+                   
+                    <!-- myService -->
+                    <div id="myService" class="sub-menu active">
+                        <div class="sub-title">
+                            <span>My Service</span>
+                            <a href="" class="btn-dropdown" ></a>
+                        </div>
+                        <ul class="lnb-depth2">
+                           
+                            <li class="all-depth2-item " >
+                                <div class="depth2">
+                                    <a href="" class="link" >
+                                        <div class="depth-icon-img">
+                                            <img src="assets/img/user/ico_cpu.png" alt="" >
+                                        </div>
+                                        <span class="">GPU 서버 가상화</span>
+                                    </a>
+                                    <a href="" class="bookmark">
+                                        <p class="sr-only">북마크</p>
+                                    </a>
+                                   
+                                    <a href="" class="btn-dropdown-depth " ></a>
+                                </div>
+                                <ul class="all-lnb-depth3">
+                                    <li  class="all-depth3-item " >
+                                        <a href="">
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_trello.png" alt="" >
+                                            </div>
+                                            <span class="">인스턴스</span>
+                                        </a>
+                                    </li>
+                                    <li  class="all-depth3-item " >
+                                        <a href="">
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_message.png" alt="" >
+                                            </div>
+                                            <span class="">카탈로그 목록</span>
+                                        </a>
+                                    </li>
+                                    <li class="all-depth3-item " >
+                                        <a href="">
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_servermanager.png" alt="" >
+                                            </div>
+                                            <span class="">서비스 목록</span>
+                                        </a>
+                                    </li>
+                                    <li  class="all-depth3-item " >
+                                        <a href="">
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_volume.png" alt="" >
+                                            </div>
+                                            <span class="">볼륨</span>
+                                        </a>
+                                    </li>
+                                    <li  class="all-depth3-item " >
+                                        <a href="" >
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_copy.png" alt="" >
+                                            </div>
+                                            <span class="">스냅샷</span>
+                                        </a>
+                                    </li>
+                                    <li class="all-depth3-item " >
+                                        <a href="" >
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_servermanager.png" alt="" >
+                                            </div>
+                                            <span class="">오브젝트 스토리지</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="all-depth2-item ">
+                                <div class="depth2">
+                                    <a href="" class="link" >
+                                        <div class="depth-icon-img">
+                                            <img src="assets/img/user/ico_server.png" alt="" >
+                                        </div>
+                                        <span class="">서버 가상화</span>
+                                    </a>
+                                    <a href="" class="bookmark">
+                                        <p class="sr-only">북마크</p>
+                                    </a>
+                                   <a href="" class="btn-dropdown-depth " ></a>
+                                </div>
+                                <ul class="all-lnb-depth3">
+                                  <li  class="all-depth3-item " >
+                                        <a href="" >
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_servermanager.png" alt="" >
+                                            </div>
+                                            <span class="">인스턴스</span>
+                                        </a>
+                                    </li>
+                                    <li class="all-depth3-item " >
+                                        <a href="" >
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_diskmanager.png" alt="" >
+                                            </div>
+                                            <span class="">볼륨</span>
+                                        </a>
+                                    </li>
+                                    <li class="all-depth3-item " >
+                                        <a href="" >
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_imgmanager.png" alt="">
+                                            </div>
+                                            <span class="">스냅샷</span>
+                                        </a>
+                                    </li>
+                                    <li class="all-depth3-item " >
+                                        <a href="" >
+                                            <div class="depth-icon-img">
+                                                <img src="assets/img/user/ico_servermanager.png" alt="" src="assets/img/user/ico_servermanager.png">
+                                            </div>
+                                            <span class="">오브젝트 스토리지</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //myService -->
+
+                    <!-- depth2Wrap -->
+                    <div id="depth2Wrap">
+                        <ul class="depth2-list">
+                          <li>
+                                <div class="sub-title">
+                                    <span class="">Service</span>
+                                    <a href="" class="btn-dropdown active"></a>
+                                </div>
+                              <ul class="lnb-depth2 active " >
+                                  <li class="all-depth2-item menu1 active ">
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="" >
+                                                </div>
+                                                <span class="">서버 가상화</span>
+                                            </a>
+                                            <a href=""  class="btn-dropdown-depth"></a>
+                                        </div>
+                                        <ul class="lnb-depth3 " ng-if="menuItem2.childCnt > 0">
+                                            <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">인스턴스</span>
+                                                </a>
+                                            </li>
+                                            <li  class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">볼륨</span>
+                                                </a>
+                                            </li>
+                                            <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">스냅샷</span>
+                                                </a>
+                                            </li>
+                                            <li  class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">오브젝트 스토리지</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                  <li class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_cpu.png" alt="">
+                                                </div>
+                                                <span class="">GPU 서버 가상화</span>
+                                            </a>
+                                            <a href=""  class="btn-dropdown-depth"></a>
+                                        </div>
+                                       <ul class="lnb-depth3 " >
+                                           <li  class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">인스턴스</span>
+                                                </a>
+                                            </li>
+                                           <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">카탈로그 목록</span>
+                                                </a>
+                                            </li>
+                                           <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">서비스 목록</span>
+                                                </a>
+                                           </li>
+                                           <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">볼륨</span>
+                                                </a>
+                                            </li> <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">스냅샷</span>
+                                                </a>
+                                            </li> 
+                                           <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">오브젝트 스토리지</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                  <li  class="all-depth2-item menu1 active ">
+                                        <div class="depth2" role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_smartphone.png" alt="" >
+                                                </div>
+                                                <span class="">App 실행 서비스</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    </li>
+                                  <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_kubernetes.png" alt="" src="assets/img/user/ico_kubernetes.png">
+                                                </div>
+                                                <span class="">쿠버네티스 서비스</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    </li>
+                                  <li class="all-depth2-item menu1 active " >
+                                        <div class="depth2" role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="" >
+                                                </div>
+                                                <span class="">Function 서비스</span>
+                                            </a>
+                                            <a href="" class="btn-dropdown-depth"></a>
+                                        </div>
+                                        <ul class="lnb-depth3 " ng-if="menuItem2.childCnt > 0">
+                                           <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">대시보드</span>
+                                                </a>
+                                            </li>
+                                          <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">함수 관리</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                  </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="sub-title">
+                                    <span class="">Service</span>
+                                    <a href="" class="btn-dropdown active"></a>
+                                </div>
+                                <ul class="lnb-depth2 active " ng-if="menuItem1.childCnt > 0">
+                                    <li class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_algorithm.png" alt="" src="assets/img/user/ico_algorithm.png">
+                                                </div>
+                                                <span class="">데이터&amp;알고리즘 검색</span>
+                                            </a>
+                                            <a href="" class="btn-dropdown-depth"></a>
+                                        </div>
+                                        <ul class="lnb-depth3 " >
+                                         <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">대시보드</span>
+                                                </a>
+                                            </li> 
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">사용중인 데이터</span>
+                                                </a>
+                                            </li>
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">분석 데이터 저장소</span>
+                                                </a>
+                                            </li> 
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">사용자 공유 데이터</span>
+                                                </a>
+                                            </li>
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">분석 알고리즘</span>
+                                                </a>
+                                            </li>
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">분석 도구</span>
+                                                </a>
+                                            </li> 
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">튜토리얼</span>
+                                                </a>
+                                            </li>
+                                            <li class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">작업공간 탐색기</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="sub-title">
+                                    <span class="">Service</span>
+                                    <a href="" class="btn-dropdown active"></a>
+                                </div>
+                               <ul class="lnb-depth2 active ">
+                                   <li class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="">
+                                                </div>
+                                                <span class="">소스코드 저장소</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                      
+                                    </li>
+                                   <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2" role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_binary.png" alt="" >
+                                                </div>
+                                                <span class="">개발 파이프라인</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    
+                                    </li>
+                                   <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="" >
+                                                </div>
+                                                <span class="">Docker 이미지 저장소</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                        
+                                    </li><li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_gitcommit.png" alt="" src="assets/img/user/ico_gitcommit.png">
+                                                </div>
+                                                <span class="">API 게이트웨이</span>
+                                            </a>
+                                            <a href="" class="btn-dropdown-depth"></a>
+                                        </div>
+                                       <ul class="lnb-depth3 " >
+                                           <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">API 관리</span>
+                                                </a>
+                                            </li>
+                                          <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">API 이용 승인 관리</span>
+                                                </a>
+                                            </li>
+                                           <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">API 검색</span>
+                                                </a>
+                                            </li>
+                                           <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">API 이용현황</span>
+                                                </a>
+                                            </li>
+                                           <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">Token 발급</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="sub-title">
+                                    <span class="">Service</span>
+                                    <a href="" class="btn-dropdown active"></a>
+                                </div>
+                                <ul class="lnb-depth2 active " ng-if="menuItem1.childCnt > 0">
+                                    <li  class="all-depth2-item menu1 active ">
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_map.png" alt="" >
+                                                </div>
+                                                <span class="">GIS 서비스</span>
+                                            </a>
+                                            <a href=""  class="btn-dropdown-depth"></a>
+                                        </div>
+                                        <ul class="lnb-depth3 " >
+                                         <li  class="all-depth3-item " role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">저장소 관리</span>
+                                                </a>
+                                            </li>
+                                            <li class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">레이어 관리</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_find2.png" alt="" >
+                                                </div>
+                                                <span class="">설비 데이터 수집&amp;HMI</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    </li>
+                                   <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="" >
+                                                </div>
+                                                <span class="">인포그래픽스</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    </li>
+                                    <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="" >
+                                                </div>
+                                                <span class="">웹UI 템플릿</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <div class="sub-title">
+                                    <span class="">Service</span>
+                                    <a href="" class="btn-dropdown active"></a>
+                                </div>
+                                <ul class="lnb-depth2 active " >
+                                   <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2"  role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_database3.png" alt="" >
+                                                </div>
+                                                <span class="">데이터 브로커</span>
+                                            </a>
+                                            <a href="" class="btn-dropdown-depth"></a>
+                                        </div>
+                                      <ul class="lnb-depth3 " >
+                                            <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">데이터 등록</span>
+                                                </a>
+                                            </li> 
+                                          <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">데이터 신청 승인</span>
+                                                </a>
+                                            </li> 
+                                          <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">데이터 검색</span>
+                                                </a>
+                                            </li> 
+                                          <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">데이터 이용현황</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2" role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_server.png" alt="" >
+                                                </div>
+                                                <span class="">DB서비스(Baremetal)</span>
+                                            </a>
+                                            <a href="" ></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" active" >
+                                <div class="sub-title">
+                                    <span class="">Service</span>
+                                    <a href="" class="btn-dropdown active"></a>
+                                </div>
+                               <ul class="lnb-depth2 active " >
+                                   <li  class="all-depth2-item menu1 active ">
+                                        <div class="depth2" role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_network.png" alt="" >
+                                                </div>
+                                                <span class="">API Store</span>
+                                            </a>
+                                            <a href=""  class="btn-dropdown-depth"></a>
+                                        </div>
+                                        <ul class="lnb-depth3 " >
+                                          <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">MSA 워크로드</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                   <li  class="all-depth2-item menu1 active " >
+                                        <div class="depth2" role="button" tabindex="0">
+                                            <a href="" class="link">
+                                                <div class="depth-icon-img">
+                                                    <img src="assets/img/user/ico_feather.png" alt="" >
+                                                </div>
+                                                <span class="">통합 성과분석</span>
+                                            </a>
+                                            <a href=""  class="btn-dropdown-depth"></a>
+                                        </div>
+                                       <ul class="lnb-depth3 ">
+                                           <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">대시보드</span>
+                                                </a>
+                                            </li>
+                                           <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">과금현황</span>
+                                                </a>
+                                            </li>  
+                                           <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">월별 사용현황</span>
+                                                </a>
+                                            </li>   
+                                           <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">항목별 사용추이</span>
+                                                </a>
+                                            </li>
+                                           <li  class="all-depth3-item "  role="button" tabindex="0">
+                                                <a href="">
+                                                    <span class="">과금 정책</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //depth2Wrap -->
+                </div>
+                    
+            </nav>
+    </aside>
+    
+   <div id="container">                                      
+		<main id="contentWrap" >                                   
+			<div class="page-title ng-scope">
+                <div id="spot" ><div class="page-info" >항목별 사용추이</div>
+	
+	<div class="page-location">
+		<span class="home"> <i class="xi-home-o"></i> Home
+		</span> 
+        <span >Service</span><span >통합 성과분석</span>
+	</div>
+                    <a href="" class="btn-refresh " title="새로고침" >
+		<i class="xi-renew"></i>
+		<p class="sr-only">새로고침</p>
+	</a>
+</div>
+            </div>
+			<div class="page-content" ><div >
+                <div class="content inner-wrap " id="mainContents">
+<section class="panel panel-bordered">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="panel-title">※ 각 항목의 사용량은 시간당 사용량의 합산입니다.</h3>
+
+			</div>
+			<div class="col-md-6">
+				<div class="text-right margin-15">
+					<div class="form-group inline-block margin-bottom-0">
+						<select class="form-control form-control-md " aria-invalid="false">
+                            <option label="2019년" value="number:2019">2019년</option>
+                            <option label="2020년" value="number:2020">2020년</option>
+                            <option label="2021년" value="number:2021" selected="selected">2021년</option>
+                        </select>
+					</div>
+				
+                <div class="form-group inline-block margin-bottom-0">
+					<select class="form-control form-control-md" aria-invalid="false" style="">
+                        <option label="가상서버"  selected="selected">가상서버</option>
+                        <option label="GPU" >GPU</option>
+                        <option label="PaaS">AR/VR 컨텐츠 공유 서비스</option></select>
+				</div>
+                <div class="form-group inline-block margin-bottom-0">
+					<select class="form-control form-control-md "  aria-invalid="false" style="">
+                        <option label="서버 vCore" value="string:M01001" selected="selected">서버 vCore</option>
+                        <option label="서버 RAM" value="string:M01002">서버 RAM</option>
+                        <option label="OS 디스크" value="string:M01003">OS 디스크</option>
+                        <option label="데이터 디스크" value="string:M01004">데이터 디스크</option></select>
+				</div>
+                    </div>
+			</div>
+		</div>
+	</div>
+</section>
+  <section class="panel panel-bordered">
+	<div class="panel-body">
+		<h3 class="heading h3">월별 사용 추이<em class="font-size-13 grey-500 padding-left-10 ng-binding">(단위: CNT)</em></h3>
+		<!--<h3 class="heading h3">추이<em>(단위: vCore)</em></h3-->
+		<div class="chart_wrap margin-top-30">
+			<div id="monthly-metering-chart" style="width: 1187px; height: 619px;"><div class="chartWarningImg " >사용량 없음</div>
+		</div>
+		<h3 class="heading h3 margin-top-30">현황<em class="font-size-13 grey-500 padding-left-10 ng-binding">(단위: CNT)</em></h3>
+		<div class="table-wrap border-0 margin-top-20">
+			<table class="table table-hover table-bordered double-th">
+				<colgroup>
+					<col style="width:;"><!-- 1월 -->
+					<col style="width:;"><!-- 2월 -->
+					<col style="width:"><!-- 3월 -->
+					<col style="width:;"><!-- 4월 -->
+					<col style="width:;"><!-- 5월 -->
+					<col style="width:;"><!-- 6월 -->
+					<col style="width:;"><!-- 7월 -->
+					<col style="width:;"><!-- 8월 -->
+					<col style="width:;"><!-- 9월 -->
+					<col style="width:"><!-- 10월 -->
+					<col style="width:;"><!-- 11월 -->
+					<col style="width:;"><!-- 12월 -->
+					<col style="width:15%;"><!-- 합계 -->
+				</colgroup>
+				<thead class="bg-blue-grey-100 text-center th-row-2 doubleRow">
+					<tr>
+						<th colspan="12">월별현황</th>
+						<th rowspan="2">합계</th>
+					</tr>
+					<tr>
+                        <th >1월</th>
+                        <th >2월</th>
+                        <th >3월</th>
+                        <th >4월</th>
+                        <th >5월</th>
+                        <th >6월</th>
+                        <th >7월</th>
+                        <th >8월</th>
+                        <th >9월</th>
+                        <th >10월</th>
+                        <th >11월</th>
+                        <th >12월</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-center " > 0</td>
+                        <td class="text-center " > 0</td>
+                        <td class="text-center " > 0</td>
+                        <td class="text-center " > 0</td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-center " > </td>
+                        <td class="text-right " > 0 </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+        </div>
+      </div>
+</section>
+<section class="panel panel-bordered">
+	<div class="panel-body">
+		<div class="clearfix">
+			<div class="pull-left">
+				<h3 class="heading h3">일별 사용 추이<em class="font-size-13 grey-500 padding-left-10 ng-binding">(단위: CNT)</em></h3>
+				<!--<h3 class="heading h3">추이<em>(단위: vCore)</em></h3-->
+			</div>
+			<div class="pull-right">
+				<div class="form-group inline-block margin-bottom-0">
+					<select class="form-control form-control-md" aria-invalid="false">
+                        <option label="1월" value="number:1">1월</option>
+                        <option label="2월" value="number:2">2월</option>
+                        <option label="3월" value="number:3">3월</option>
+                        <option label="4월" value="number:4" selected="selected">4월</option>
+                    </select>
+				</div>
+			</div>
+		</div>
+		<div class="chart_wrap margin-top-30">
+            <div id="daily-metering-chart" style="width: 1187px; height: 619px;"><div class="chartWarningImg" >사용량 없음</div></div>
+		</div>
+		<h3 class="heading h3 margin-top-30">현황<em class="font-size-13 grey-500 padding-left-10 ng-binding">(단위: CNT)</em></h3>
+		<div class="table-wrap border-0 margin-top-20">
+			<table class="table table-hover table-bordered double-th">
+				<colgroup>
+					<col style="width:;"><!-- 1일 -->
+					<col style="width:;"><!-- 2일 -->
+					<col style="width:"><!-- 3일 -->
+					<col style="width:;"><!-- 4일 -->
+					<col style="width:;"><!-- 5일 -->
+					<col style="width:;"><!-- 6일 -->
+					<col style="width:;"><!-- 7일 -->
+					<col style="width:;"><!-- 8일 -->
+					<col style="width:;"><!-- 9일 -->
+					<col style="width:"><!-- 10일 -->
+					<col style="width:;"><!-- 11일 -->
+					<col style="width:;"><!-- 12일 -->
+					<col style="width:;"><!-- 13일 -->
+					<col style="width:;"><!-- 14일 -->
+					<col style="width:;"><!-- 15일 -->
+					<col style="width:;"><!-- 16일 -->
+				</colgroup>
+				<thead class="bg-blue-grey-100 text-center th-row-2 doubleRow">
+					<tr>
+						<th  class="">1일</th><th  class="">2일</th><th  class="">3일</th><th  class="">4일</th><th  class="">5일</th><th  class="">6일</th><th  class="">7일</th><th  class="">8일</th><th  class="">9일</th><th  class="">10일</th><th  class="">11일</th><th  class="">12일</th><th  class="">13일</th><th  class="">14일</th><th  class="">15일</th>
+						
+						<th>합계</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td class="text-center "> 0</td>
+                        <td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center"> 0 </td>
+				</tbody>
+				<thead class="bg-blue-grey-100 text-center th-row-2 doubleRow">
+					<tr>
+						
+						<th>16일</th><th>17일</th><th>18일</th><th>19일</th><th>20일</th><th>21일</th><th>22일</th><th>23일</th><th>24일</th><th>25일</th><th>26일</th><th>27일</th><th>28일</th><th>29일</th><th>30일</th>
+						<th > - </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td class="text-center "> 0</td>
+                        <td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center " > 0</td><td class="text-center"> 0 </td>
+					</tr>
+				</tbody>
+			</table>
+	
+	</div>
+    </div>
+</section>
+</div></div>
+</div> 
+		</main>                                               
+	</div>
+    
+    
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7"></script>
+</body>
+</html>
