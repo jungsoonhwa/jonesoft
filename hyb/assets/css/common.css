@@ -15,7 +15,7 @@
 .h-tit5{font-size: 18px; line-height: 1.2; font-weight: 700; margin: 0;}
 .h-tit6{font-size: 16px; line-height: 1.2; font-weight: 700; margin: 0;}
 
-.cont-titWrap{padding-top:20px; margin-bottom: 30px; background:url("../images/bg_tit_line.png") no-repeat; background-position: top left;}
+.cont-titWrap{padding-top:20px; margin-bottom: 30px; background:url("../img/bg_tit_line.png") no-repeat; background-position: top left;}
 .cont-titWrap.mg0{margin:0;}/*180601 컨텐츠 타이틀영역 마진값 초기화스타일 추가*/
 .cont-titWrap + .tb-top, .cont-titWrap + .tb-top + .tbl{position:relative;top:-27px;}/*180409 스타일 갱신*/
 .cont-titWrap + .tb-top + .tbl + .pagiWrap{position:relative;top:-27px;}/*180409 스타일 갱신*/
@@ -23,7 +23,7 @@
 .cBox + .cont-titWrap{margin-top: 50px;}
 
 /* ico */
-.ico{display:inline-block; position: relative; font-size: 0; vertical-align:middle; background:url("../images/ico_com.png?v=3") no-repeat; }
+.ico{display:inline-block; position: relative; font-size: 0; vertical-align:middle; background:url("../img/ico_com.png?v=3") no-repeat; }
 .ico-info1{width:17px; height:17px; background-position: -110px -304px;}
 .ico-info2{width:17px; height:17px; vertical-align: middle; margin-left: 5px; background-position: -137px -304px;}
 .ico-info3{position:absolute; z-index:999; top:14px; right:18px; width:17px; height:17px; vertical-align: middle; margin-left: 5px; background-position: -109px -304px;}
@@ -136,7 +136,7 @@
 .h_auto {height:auto !important;}
 
 /* form */
-.select{font-size:13px; font-weight:400; height:25px; padding-left:5px;  border:1px solid #eaeaea;  background: url("../images/ico_sel.png") no-repeat; background-size: auto 25px; background-position: center right; -webkit-appearance: listbox; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none;}
+.select{font-size:13px; font-weight:400; height:25px; padding-left:5px;  border:1px solid #eaeaea;  background: url("../img/ico_sel.png") no-repeat; background-size: auto 25px; background-position: center right; -webkit-appearance: listbox; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none;}
 .select::-ms-expand{display: none;}
 .checkbox-inline label{margin-bottom: 0;}
 .radio-inline label{margin-bottom: 0;}
@@ -146,18 +146,18 @@
 input.form-control{height:40px; padding: 0 15px; -webkit-appearance: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
 input[type="text"], input[type="password"]{height:44px; padding: 0 10px; }
 input[disabled]{color: #555 !important; background-color: #eee !important;}
-select, select.form-control{color:#777; min-width: 75px; height: 44px; padding:0px 30px 0px 10px; border: 1px solid #ccc; border-radius: 2px; background:#fff url("../images/ico_sel.png") no-repeat; background-position: center right; -webkit-appearance: listbox; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none;}
+select, select.form-control{color:#777; min-width: 75px; height: 44px; padding:0px 30px 0px 10px; border: 1px solid #ccc; border-radius: 2px; background:#fff url("../img/ico_sel.png") no-repeat; background-position: center right; -webkit-appearance: listbox; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none;}
 select::-ms-expand{display: none;}
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{background-color: #f0f0f0;}
 .form-control{ -webkit-appearance: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
 .input-group-btn select{height: 30px;}
 textarea.form-control{border:1px solid #d6d6d6;}
 @media screen and (min-width:0\0){select, select.form-control{padding:5px; background:none;}}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {select, select.form-control{padding:0px 30px 0px 5px ; background:#fff url("../images/ico_sel.png") no-repeat; background-position: center right; }}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {select, select.form-control{padding:0px 30px 0px 5px ; background:#fff url("../img/ico_sel.png") no-repeat; background-position: center right; }}
 .input-group .input-group-addon{padding:0 0 0 5px; border:0; background: none;}
 select.has-error, input.has-error{border-color:#ff0740;}
 .has-error{color: #d40031; line-height: 18px; padding-top:10px; }
-.has-error::before{display: inline-block; content: ''; width:18px; height: 18px; margin-right: 5px; vertical-align: text-bottom; background: url("../images/ico_com.png") no-repeat; background-position: -508px -46px;}
+.has-error::before{display: inline-block; content: ''; width:18px; height: 18px; margin-right: 5px; vertical-align: text-bottom; background: url("../img/ico_com.png") no-repeat; background-position: -508px -46px;}
 
 /* form */
 .form-inline .label-txt{color:#535f6c; margin-bottom: 0;}
@@ -170,7 +170,7 @@ select.has-error, input.has-error{border-color:#ff0740;}
 .checkbox label::after { display: inline-block; position: absolute; left: 0; top: 0; font-size: 14px; color: #1e75d6; width: 20px; height: 20px; margin-left: -20px; text-align: center;}
 .checkbox input[type="checkbox"] {width:20px; height:20px; opacity: 0; z-index: 1; margin-top:0;}
 .checkbox input[type="checkbox"]:focus + label::before {border-color:#333; outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px;}
-.checkbox input[type="checkbox"]:checked + label::after {color:#fff; line-height: 20px; content: ""; background: url("../images/ico_com.png") no-repeat; background-position: -253px -139px;}
+.checkbox input[type="checkbox"]:checked + label::after {color:#fff; line-height: 20px; content: ""; background: url("../img/ico_com.png") no-repeat; background-position: -253px -139px;}
 .checkbox input[type="checkbox"]:checked + label::before{border-color:#2196f3; background: #fff;}
 .checkbox input[type="checkbox"]:disabled + label{color:#808487; cursor: default;}
 .checkbox input[type="checkbox"]:disabled + label::before {border-color:#d9d9d9; background-color: #ffff;  cursor: not-allowed;}
@@ -335,8 +335,8 @@ select.has-error, input.has-error{border-color:#ff0740;}
 .btn-ico-add_mem-s:hover .ico{background-position: -256px -378px;}
 
 /*180702 아이콘추가*/
-.btn-ico-row_plus .ico{width:17px; height:17px; background:url("../images/ico_plus_b.png") no-repeat;}
-.btn-ico-row_minus .ico{width:17px; height:17px; background:url("../images/ico_minus_b.png") no-repeat;}
+.btn-ico-row_plus .ico{width:17px; height:17px; background:url("../img/ico_plus_b.png") no-repeat;}
+.btn-ico-row_minus .ico{width:17px; height:17px; background:url("../img/ico_minus_b.png") no-repeat;}
 
 /*181212 copy아이콘추가*/
 .btn-ico-copy-s .ico{width:52px; height:15px; background-position: -165px -407px;}
@@ -373,7 +373,7 @@ i.i_star:before {content:"*"; display:inline-block; font-size:14px; color:#ff000
 .step.type1 li.on{color:#fff;}
 .step.type1 li.on .num{color:#475769;background: #ffc000;}
 .step.type1 li.on .txt{color: #ffc000;}
-.step.type1 li+li{padding-left: 15px; border-left:0; background-image: url("../images/step_bg1.png"); background-repeat: no-repeat; background-position: left center;}
+.step.type1 li+li{padding-left: 15px; border-left:0; background-image: url("../img/step_bg1.png"); background-repeat: no-repeat; background-position: left center;}
 .step.type1 li em{display: inline-block; margin-right: 5px;}
 .step.type1.w3 li{width:33.3%;}
 
@@ -506,7 +506,7 @@ i.i_star:before {content:"*"; display:inline-block; font-size:14px; color:#ff000
 .dateWrap{font-size:0;}
 .dateWrap .date-inpt{display: inline-block; position: relative; width:45%;}
 .dateWrap .date-inpt input[type="text"]{font-size:13px; width:100%; height: 42px; padding:0 35px 0 10px;}
-.dateWrap .date-inpt .ui-datepicker-trigger{position: absolute; top:12px; right:10px; z-index: 0; width:18px; height: 18px; border:0; border-radius: 0; cursor: pointer; background: url("../images/ico_calendar2.gif") no-repeat;}
+.dateWrap .date-inpt .ui-datepicker-trigger{position: absolute; top:12px; right:10px; z-index: 0; width:18px; height: 18px; border:0; border-radius: 0; cursor: pointer; background: url("../img/ico_calendar2.gif") no-repeat;}
 .dateWrap .wave{display: inline-block; font-size:14px; width:10%; text-align: center; vertical-align: middle;}
 
 
@@ -514,10 +514,10 @@ i.i_star:before {content:"*"; display:inline-block; font-size:14px; color:#ff000
 /*공통 컴포넌트 스타일 추가*/
 .cnt_msg_box {border-radius:5px;/*  height:47px;  */line-height:22px; padding:12px 20px 12px 50px; margin-top:15px;}
 .cnt_msg_box span {font-size:14px;}
-.cnt_msg_box.msg-warnning {border:1px solid #fec6aa; background: url("../images/ico_warnning.png") no-repeat #fdeee5 15px center;}
-.cnt_msg_box.msg-info {border:1px solid #b9cdff; background: url("../images/ico_msg_info.png") no-repeat #eaf0fe 15px center;}
-.form-control.ico_refresh {background:#fff url("../images/ico_refresh.gif") no-repeat 99% center; cursor:pointer;}
-.loading_box {height:5px; background:url("../images/loading_bar.gif") no-repeat left top; margin:0 auto;}
+.cnt_msg_box.msg-warnning {border:1px solid #fec6aa; background: url("../img/ico_warnning.png") no-repeat #fdeee5 15px center;}
+.cnt_msg_box.msg-info {border:1px solid #b9cdff; background: url("../img/ico_msg_info.png") no-repeat #eaf0fe 15px center;}
+.form-control.ico_refresh {background:#fff url("../img/ico_refresh.gif") no-repeat 99% center; cursor:pointer;}
+.loading_box {height:5px; background:url("../img/loading_bar.gif") no-repeat left top; margin:0 auto;}
 
 /*백그라운드 깔린 레이어 띄워줄 때 사용. body fixed*/
 .body_fixed {position:fixed;}
@@ -562,3 +562,22 @@ input::-ms-clear {display:none;}
 
 /*파일아이콘 추가*/
 .ico-file {width:15px; height:20px; background-position:-140px -356px;}
+
+
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+.margin-15 {
+    margin: 15px !important;
+}
+.panel {box-shadow: none;
+    margin: 20px 0;
+    background-color: #fff;}
+.panel .panel-body {
+    padding: 25px 20px;
+}
